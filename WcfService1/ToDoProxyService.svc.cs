@@ -1,15 +1,15 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using ToDo.Infrastructure;
-using WindowsService.SlowToDoManager;
+using WcfService1.SlowToDoManager;
 
-namespace WindowsService
+namespace WcfService1
 {
     public class ToDoProxyService : IToDoProxyService
     {
+        private Dictionary<int, List<IToDoItem>> cache = new Dictionary<int, List<IToDoItem>>(); 
+
+
         public void CreateToDoItem(IToDoItem item)
         {
             var client = new ToDoManagerClient();
@@ -20,7 +20,7 @@ namespace WindowsService
                 ToDoId = item.ToDoId,
                 UserId = item.UserId
             };
-
+            
             client.CreateToDoItem(toDoItem);
         }
 

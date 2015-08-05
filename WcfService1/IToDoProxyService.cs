@@ -3,12 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Runtime.Serialization;
 using System.ServiceModel;
+using System.ServiceModel.Web;
 using System.Text;
-using System.Threading.Tasks;
 using ToDo.Infrastructure;
-using WindowsService.SlowToDoManager;
 
-namespace WindowsService
+namespace WcfService1
 {
     [ServiceContract]
     public interface IToDoProxyService
