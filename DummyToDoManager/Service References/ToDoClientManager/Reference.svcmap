@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="4060edb5-c327-4266-b6b1-9064a4a43ccc" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://dubodel-001-site1.mywindowshosting.com/ToDoProxyService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="ToDoProxyService.wsdl" MetadataType="Wsdl" ID="cceacf8a-8e43-4af4-a807-d4905761c87e" SourceId="1" SourceUrl="http://dubodel-001-site1.mywindowshosting.com/ToDoProxyService.svc?wsdl" />
+    <MetadataFile FileName="ToDoProxyService.xsd" MetadataType="Schema" ID="d5bd345f-6310-4c40-a7e3-f5d18dde274c" SourceId="1" SourceUrl="http://dubodel-001-site1.mywindowshosting.com/ToDoProxyService.svc?xsd=xsd1" />
+    <MetadataFile FileName="ToDoProxyService1.xsd" MetadataType="Schema" ID="a6d8219d-449a-4127-a657-4728270caaa1" SourceId="1" SourceUrl="http://dubodel-001-site1.mywindowshosting.com/ToDoProxyService.svc?xsd=xsd0" />
+    <MetadataFile FileName="ToDoProxyService.disco" MetadataType="Disco" ID="dff3597d-6376-4ec1-a000-f226aedc4c65" SourceId="1" SourceUrl="http://dubodel-001-site1.mywindowshosting.com/ToDoProxyService.svc?disco" />
+    <MetadataFile FileName="ToDoProxyService2.xsd" MetadataType="Schema" ID="43ca7015-9873-4206-9023-8a6cec8041f0" SourceId="1" SourceUrl="http://dubodel-001-site1.mywindowshosting.com/ToDoProxyService.svc?xsd=xsd2" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>
