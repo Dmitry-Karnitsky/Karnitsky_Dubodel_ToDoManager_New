@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace WindowsService.SlowToDoManager {
+namespace WcfService1.SlowToDoManager {
     using System.Runtime.Serialization;
     using System;
     
@@ -111,13 +111,13 @@ namespace WindowsService.SlowToDoManager {
     public interface IToDoManager {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IToDoManager/GetTodoList", ReplyAction="http://tempuri.org/IToDoManager/GetTodoListResponse")]
-        WindowsService.SlowToDoManager.ToDoItem[] GetTodoList(int userId);
+        WcfService1.SlowToDoManager.ToDoItem[] GetTodoList(int userId);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IToDoManager/UpdateToDoItem", ReplyAction="http://tempuri.org/IToDoManager/UpdateToDoItemResponse")]
-        void UpdateToDoItem(WindowsService.SlowToDoManager.ToDoItem todo);
+        void UpdateToDoItem(WcfService1.SlowToDoManager.ToDoItem todo);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IToDoManager/CreateToDoItem", ReplyAction="http://tempuri.org/IToDoManager/CreateToDoItemResponse")]
-        void CreateToDoItem(WindowsService.SlowToDoManager.ToDoItem todo);
+        void CreateToDoItem(WcfService1.SlowToDoManager.ToDoItem todo);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IToDoManager/DeleteToDoItem", ReplyAction="http://tempuri.org/IToDoManager/DeleteToDoItemResponse")]
         void DeleteToDoItem(int todoItemId);
@@ -127,12 +127,12 @@ namespace WindowsService.SlowToDoManager {
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    public interface IToDoManagerChannel : WindowsService.SlowToDoManager.IToDoManager, System.ServiceModel.IClientChannel {
+    public interface IToDoManagerChannel : WcfService1.SlowToDoManager.IToDoManager, System.ServiceModel.IClientChannel {
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    public partial class ToDoManagerClient : System.ServiceModel.ClientBase<WindowsService.SlowToDoManager.IToDoManager>, WindowsService.SlowToDoManager.IToDoManager {
+    public partial class ToDoManagerClient : System.ServiceModel.ClientBase<WcfService1.SlowToDoManager.IToDoManager>, WcfService1.SlowToDoManager.IToDoManager {
         
         public ToDoManagerClient() {
         }
@@ -153,15 +153,15 @@ namespace WindowsService.SlowToDoManager {
                 base(binding, remoteAddress) {
         }
         
-        public WindowsService.SlowToDoManager.ToDoItem[] GetTodoList(int userId) {
+        public WcfService1.SlowToDoManager.ToDoItem[] GetTodoList(int userId) {
             return base.Channel.GetTodoList(userId);
         }
         
-        public void UpdateToDoItem(WindowsService.SlowToDoManager.ToDoItem todo) {
+        public void UpdateToDoItem(WcfService1.SlowToDoManager.ToDoItem todo) {
             base.Channel.UpdateToDoItem(todo);
         }
         
-        public void CreateToDoItem(WindowsService.SlowToDoManager.ToDoItem todo) {
+        public void CreateToDoItem(WcfService1.SlowToDoManager.ToDoItem todo) {
             base.Channel.CreateToDoItem(todo);
         }
         
